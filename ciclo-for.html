@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Acceso a elementos DOM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+          <label for="numero1">Ingresa un número 1:</label>
+          <input type="number" id="nombre1" />
+          <label for="numero2">Ingresa un número 2:</label>
+          <input type="number" id="numero2" />
+          <select id="opcion">
+            <option value="general">General</option>
+            <option value="plata">Plata</option>
+            <option value="oro">Oro</option>
+            <option value="vip">Vip</option>
+          </select>
+
+        <label for="resultado">Resultado:</label>
+        <input type="number" id="resultado" readonly />
+        <div class="panel">
+          <div class="row">
+            <input type="button" value="Sumar" class="column" id="btnSumar"/>
+            <input type="button" value="Restar" class="column" id="btnRestar"/>
+          </div>
+          <div class="row">
+            <input type="button" value="Lista" class="column" id="btnLista"/>
+            <input type="button" value="0 a 100" class="column" id="btnDos" />
+          </div>
+          <div class="row">
+              <input type="button" value="1 a 9" class="column" id="btnUno"/>
+          </div>
+        </div>
+
+        <ul id="lista">
+          <li>Uno</li>
+          <li>Dos</li>
+          <li>Tres</li>
+        </ul>
+
+        <table>
+          <thead>
+            <th>Nombre</th>
+          </thead>
+
+          <tbody id="tabla">
+            <tr>
+              <td>Uno</td>
+            </tr>
+            <tr>Dos</tr>
+            <tr>
+              <td> Tres</td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+  <script src="ciclo-for.js"></script>
+</html>
